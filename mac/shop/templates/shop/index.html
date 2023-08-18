@@ -85,7 +85,7 @@ padding-right: 0;
 {% if status %}
   <script>
         alert("{{status}}");
-        window.location="/shop";
+        window.location="";
     </script>
 {% endif %}
 
@@ -129,7 +129,7 @@ function updatePopover(cart) {
         popStr = popStr + document.getElementById('name' + item).innerHTML.slice(0, 19) + "... Qty: " + cart[item][0] + '<br>';
         i = i + 1;
     }
-    popStr = popStr + "</div> <a href='/shop/checkout'><button class='btn btn-primary btn-success' id ='checkout'>Checkout</button></a> <button class='btn btn-success btn-primary' onclick='clearCart()' id ='clearCart'>Clear Cart</button>     ";
+    popStr = popStr + "</div> <a href='/checkout'><button class='btn btn-primary btn-success' id ='checkout'>Checkout</button></a> <button class='btn btn-success btn-primary' onclick='clearCart()' id ='clearCart'>Clear Cart</button>     ";
     document.getElementById('popcart').setAttribute('data-content', popStr);
     //$('#popcart').popover('show');
 }
