@@ -1,5 +1,13 @@
 {% extends 'shop/basic.html' %}
-{% block title%} Checkout - My Awesome Cart{% endblock %}
+{% block title%} Checkout {% endblock %}
+{% block css %}
+@media (max-width: 1055px){
+footer{
+bottom:0;
+position:fixed;
+}
+}
+{% endblock %}
 {% block body %}
 <div class="container">
     <div class="col my-4">
