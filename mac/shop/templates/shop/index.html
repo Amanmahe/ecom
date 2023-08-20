@@ -1,26 +1,31 @@
 {% extends 'shop/basic.html' %}
+{% block title%}MAHESHWARI STORE{% endblock %}
 {% block css %}
+.my-4{
+font:size:40px;
+}
 .col-md-3
 {
 display: inline-block;
 margin-left:-4px;
 }
 .carousel-indicators .active {
-background-color: blue;
+background-color: green;
 }
 .col-md-3 img{
 width: 170px;
 height: 200px;
 }
 body .carousel-indicator li{
-background-color: blue;
+background-color: green;
 }
 body .carousel-indicators{
 bottom: 0;
 }
+
 body .carousel-control-prev-icon,
 body .carousel-control-next-icon{
-background-color: blue;
+background-color: green;
 }
 .carousel-control-prev,
 .carousel-control-next{
@@ -32,13 +37,18 @@ body .no-padding{
 padding-left: 0,
 padding-right: 0;
 }
+
+
+
+
+
 {% endblock %}
 {% block body %}
 {% load static %}
 <div class="container">
     <!--Slideshow starts here -->
     {% for product, range, nSlides in allProds %}
-    <h5 class="my-4">Flash Sale On {{product.0.category}} - Recommended Items</h5>
+    <h5 class="my-4"> {{product.0.category}} - Recommended Items</h5>
     <div class="row">
         <div id="demo{{forloop.counter}}" class="col carousel slide my-3" data-ride="carousel">
             <ul class="carousel-indicators">
