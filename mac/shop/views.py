@@ -86,7 +86,7 @@ def tracker(request):
         except Exception as e:
             return HttpResponse('{}')
 
-    return render(request, 'shop/tracker.html')
+    return render(request, '/tracker.html')
 
 
 def checkout(request):
