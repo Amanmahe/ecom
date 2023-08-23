@@ -20,7 +20,7 @@ position:fixed;
                     <li class="breadcrumb-item active" aria-current="page">Your Cart Total Is <b>Rs.<span id="totalPrice">  </span></b> Enter your details below & place your order. Thanks for using My Awesome Cart!</li>
                 </ol>
             </nav>
-1
+
         </div>
     <div class="col my-4">
         <h2>Step 2 - Enter Address & Other Details:</h2>
@@ -105,7 +105,7 @@ $('#itemsJson').val(JSON.stringify(cart));
 {% if thank %}
 alert('Thanks for ordering with us. Your order id is {{id}}. Use it to track your order using our order tracker');
 localStorage.clear();
-document.location = "/shop";
+document.location = "";
 {% endif %}
 $('#amount').val($('#totalPrice').html())
 </script>
